@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- esta etiqueta abajo es para darle mas compatibilidad
+     con navegadores internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Descripcion de la pagina -->
+    <meta
+      name="description"
+      content="Bienvenidos al SPA Yokanos
+    donde te cuidamos con amor"
+    />
+    <!-- palabras claves -->
+    <meta
+      name="keywords"
+      content="spa, belleza, cuidado de la piel,
+    masajes"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/movile.css"
+    />
+    <title>SPA Yokanos/ Contacto</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"><a href="index.html">SPA YOKANOS</a></h1>
+          <ul>
+            <!-- class current lo que hace es que ilumina el boton
+             de la parte de la pagina en la que nos encontramos. -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="contacto.html" class="current">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contacto -->
+    <section id="contact-form" class="py-3">
+      <div class="container">
+        <h1 class="l-heading">
+          <span class="text-primary">Contáctanos</span>
+        </h1>
+        <p>Por favor diligencie el formulario</p>
+        <!-- si existiera el codigo php -->
+        <form action="procesa.php">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Ingresa tu Nombre"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ingresa tu Email"
+            />
+
+            <label for="text">Mensaje:</label>
+            <textarea
+              name="mensaje"
+              id="mensaje "
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button class="btn">Contactar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-info" class="bg-dark">
+      <div class="container">
+        <div class="box">
+          <i class="fa-solid fa-house-chimney-user fa-3x"></i>
+          <h3>Ubicación</h3>
+          <p>Volcan Isluga #4045, Chile</p>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-phone fa-3x"></i>
+          <h3>Telefono</h3>
+          <p>+569 66061684</p>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-envelope fa-3x"></i>
+          <h3>Email</h3>
+          <p>carlosrebollo.96@gmail.com</p>
+        </div>
+      </div>
+    </section>
+    <footer id="main-footer">
+      <p>SPA Yokanos &copy; 2026, Todos los derechos Reservados</p>
+    </footer>
+  </body>
+</html>
